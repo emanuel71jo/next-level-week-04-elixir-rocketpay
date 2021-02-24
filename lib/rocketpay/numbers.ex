@@ -6,7 +6,7 @@ defmodule Rocketpay.Numbers do
   end
 
   defp handle_file({:ok, file}) do
-    result = result
+    result = file
       |> String.split("")
       |> Stream.map(fn number -> String.to_integer(number) end)
       |> Enum.sum()
